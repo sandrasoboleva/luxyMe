@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import BookingCar from './pages/BookingCar';
 import 'antd/dist/antd.css';
-import UserBookings from './pages/UserBookings';
+import UserBookings from './pages/UserBooking';
 import AddCar from './pages/AddCar';
 import AdminHome from './pages/AdminHome';
 import EditCar from './pages/EditCar';

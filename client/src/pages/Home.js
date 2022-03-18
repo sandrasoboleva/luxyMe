@@ -22,16 +22,16 @@ function Home() {
   }, [cars]);
 
   function setFilter(values) {
-    var selectedFrom = moment(values[0], "MMM DD yyyy HH:mm");
-    var selectedTo = moment(values[1], "MMM DD yyyy HH:mm");
+    let selectedFrom = moment(values[0], "MMM DD yyyy HH:mm");
+    let selectedTo = moment(values[1], "MMM DD yyyy HH:mm");
 
-    var temp = [];
+    let temp = [];
 
-    for (var car of cars) {
+    for (let car of cars) {
       if (car.bookedTimeSlots.length == 0) {
         temp.push(car);
       } else {
-        for (var booking of car.bookedTimeSlots) {
+        for (let booking of car.bookedTimeSlots) {
           if (
             selectedFrom.isBetween(booking.from, booking.to) ||
             selectedTo.isBetween(booking.from, booking.to) ||
@@ -72,7 +72,7 @@ function Home() {
                 <div className="car-content d-flex align-items-center justify-content-between">
                   <div className="text-left pl-2">
                     <p>{car.name}</p>
-                    <p> Rent Per Hour {car.rentPerHour} /-</p>
+                    <p> Rent Per Day {car.rentPerDay} /-</p>
                   </div>
 
                   <div>

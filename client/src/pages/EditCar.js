@@ -50,29 +50,29 @@ function EditCar({ match }) {
                 <Input />
               </Form.Item>
               <Form.Item
+                name="model"
+                label="Model"
+                rules={[{ required: true }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="year"
+                label="Year"
+                rules={[{ required: true }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="rentPerDay"
+                label="Rent per day"
+                rules={[{ required: true }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
                 name="image"
                 label="Image url"
-                rules={[{ required: true }]}
-              >
-                <Input />
-              </Form.Item>
-              <Form.Item
-                name="rentPerHour"
-                label="Rent per hour"
-                rules={[{ required: true }]}
-              >
-                <Input />
-              </Form.Item>
-              <Form.Item
-                name="capacity"
-                label="Capacity"
-                rules={[{ required: true }]}
-              >
-                <Input />
-              </Form.Item>
-              <Form.Item
-                name="fuelType"
-                label="Fuel Type"
                 rules={[{ required: true }]}
               >
                 <Input />

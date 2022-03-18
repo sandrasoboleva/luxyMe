@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import DefaultLayout from "../components/DefaultLayout";
 import { deleteCar, getAllCars } from "../redux/actions/carsActions";
-import { Col, Row, Divider, DatePicker, Checkbox, Edit } from "antd";
+import { Col, Row, Divider, DatePicker,Checkbox , Edit } from "antd";
 import { Link } from "react-router-dom";
 import Spinner from "../components/Spinner";
 import moment from "moment";
@@ -49,7 +49,7 @@ function AdminHome() {
                 <div className="car-content d-flex align-items-center justify-content-between">
                   <div className="text-left pl-2">
                     <p>{car.name}</p>
-                    <p> Rent Per Hour {car.rentPerHour} /-</p>
+                    <p> Rent Per Day {car.rentPerDay} /-</p>
                   </div>
 
                   <div className="mr-4">
