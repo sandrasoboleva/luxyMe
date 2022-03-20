@@ -1,0 +1,36 @@
+{
+  "name": "car-rental-app",
+  "version": "1.0.0",
+  "description": "Luxury Car Rental",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandrasoboleva/car-rental-app.git"
+  },
+  "author": "Aleksandra Soboleva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandrasoboleva/car-rental-app/issues"
+  },
+  "homepage": "https://github.com/sandrasoboleva/car-rental-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15",
+    "stripe": "^8.209.0",
+    "uuid": "^8.3.2"
+  }
+}
