@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandrasoboleva/car-rental-app.git"
+    "url": "git+https://github.com/sandrasoboleva/luxyMe.git"
   },
   "author": "Aleksandra Soboleva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sandrasoboleva/car-rental-app/issues"
+    "url": "https://github.com/sandrasoboleva/luxyMe/issues"
   },
-  "homepage": "https://github.com/sandrasoboleva/car-rental-app#readme",
+  "homepage": "https://github.com/sandrasoboleva/luxyMe#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
